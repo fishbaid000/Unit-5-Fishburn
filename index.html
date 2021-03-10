@@ -3,16 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <!-- This is a comment. -->
+    <!-- The TITLE Element is a brief description or topic of your webpage. It is NOT the TITLE of your webpage -->
     <title>Unit 5 notes</title>
 </head>
-<body>
-    <h1>Headers</h1>
-    <p>Headers are used tp create page titles and section headers. There are 6 different sizes pre-formatted for HTML.</p>
+<body style ="background-color: #28527a;">
+
+
+
+    <h1 style="color: #f4d160">Headers</h1>
+    <p>Headers are used to create page titles and section headers. There are 6 different sizes pre-formatted for HTML.</p>
     <h1>h1 - Computer Science</h1>
     <h2>h2 - Computer Science</h2>
     <h3>h3 - Computer Science</h3>
     <h4>h4 - Computer Science</h4>
     <h5>h5 - Computer Science</h5>
     <h6>h6 - Computer Science</h6>
+
+    <hr>
+
+    <h1 style="color: #f4d160">Text Formatting</h1>
+    <p>There are three main types of text formatting. Those are: <b>bold</b>, <i>italics</i>, and <u>underline</u>.</p>
+
+    <h2>Block Elements vs. Inline Elements</h2>
+    <p>A <b>block element</b> moves the content to a new line. The paragraph element is a block element. Each paragraph will start on a new line. An <b>inline element</b> does not move to a new line. It keeps its content on the same line as previous content. The bold, italics and underline elements are all inline elements.</p>
+
+    <h3><u>Block Example</u></h3>
+    <p>This is a paragraph.</p><p>This is another paragraph. It makes a new block on a new line.</p>
+<p>This is an example of a nesteed block element.<p>This is the paragraph inside the first paragraph.</p></p>
+
+    <h3><u>Inline Example</u></h3>
+    <p>This is a paragraph with <b>bold</b>.</p>
+
+
+
+    <h1 style="color: #f4d160">Images</h1>
+
+    <h2>Vertical Text Spacing</h2>
+    <p>There are two elements that help with vertical spacing between block elements. A line break</p>
+
+    <p>An <b>image element</b> is an <i>inline</i>element which inserts pictures into the document. An image element is a self-closing element, which means it does not have an end tag. It has one attribute, src, which is a filepath that points to the imagaes location. Those filepaths can be either <b>absolute</b> or <b>relative.</b></p>
+
+    <h2>Simple Image Example</h2>
+    <img src="https://iso.500px.com/wp-content/uploads/2016/03/stock-photo-142984111.jpg">
+
+    <h2>Image Attributes</h2>
+    <p>There are 4 attributes commonly used for images. <i>width</i> and <i>height</i> are used to resize the images. <i>alt</i> allows to use text-description of image for accessibility and broken images. <i>title</i> allows a hover-over text to appear</p>
+
+    <h3>Width and Height</h3>
+    <p>The width and height can be measured in many different ways, but the more common ones are pixels and percentages. Using pixels, you set the specific, precise size based on pixels. Using percentages, you set the dimensions based on a percentage of the entire page. Percentage based re-sizing will often respect aspect ratio wile using pixels may not.</p>
+
+    <img src="https://iso.500px.com/wp-content/uploads/2016/03/stock-photo-142984111.jpg" title="Set width and height using pixels" width="150px" height="150px">
+
+    <img src="https://iso.500px.com/wp-content/uploads/2016/03/stock-photo-142984111.jpg" title="Set width and height using pixels and maintaining aspect ratio" width="150px">
+
+    <img src="https://iso.500px.com/wp-content/uploads/2016/03/stock-photo-142984111.jpg" title="Set width and height using percentages" width="50%">
+
+    <h3>Alt Attribute</h3>
+    <p>EVERY picture should at LEAST have the alt attribute. The alt attribute helps with screen readers for visually impaired users amd in the cases that the image is broken.</p>
+    <img src="https://iso.500px.com/wp-content/uploads/2016/03/stock-photo-142984111.jpg" title="broken link without alt" width="50%">
+
+    <h2>Relative vs. Absolute</h2>
+    <p>An <b>absolute</b> filepath includes all the navigate to get to the server, folders and file. The examples above are all absolute filepaths. An absolute filepath is used when the image is stored on a different server or device than the HTML document. </p>
+
+    <p></p>
+
+    <h2>Simple Link</h2>
+    <a href="https://www.webhamster.com/">LINK</a>
+    <p>In order for a link to work is <b>MUST</b> include the <i>href</i> attribute. This attribute is the filepath, either absolute or relative, to the document, website or file you wish to link.</p>
+
+    <h2>Links Attributes</h2>
+    <p>The <i>target</i> attribute allows you to decide where the link opens. There are 4 options, but only one is commonly used. <i>_blank</i> opens the linked document in a new window or tab. <i>_self</i> opens the link in the current window or tab. This is the default behavior. The two others are only used if you have a frame or other window INSIDE a window. We will not be discussing these.</p>
+
+    <a href="https://www.webhamster.com/" target="_blank">This link will open in a new tab.</a>
+
+    <p>The <i>download</i> attribute allows you to download the file or document linked. This is commonly used only with relative filepaths.</p>
+
+    <a href=""></a>
+
+    <h2>A Picture as a Link</h2>
+    <p>Since a link has an opening AND closing tab, we can place ANY HTML ELEMENT</p>
+
+    <a href="https://www.webhamster.com/" target="_blank">
+        <img src="deer.jpg" title="A picture as a link" alt="deer in meadow at sundown">
+    </a>
+
+    <h2>Link to Another Page</h2>
+
+<a href="cssNotes.html">CSS Notes Page</a>
+
+
+
 </body>
 </html>
